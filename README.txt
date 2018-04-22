@@ -34,9 +34,20 @@ Follow these instructions below to run the project
 	- Run "./sound.a" command for running the project.
 	
 4. File manifest
-	
+	- main.c: This is the root file.
+	- sound.c: This file contains code for extracting information from the WAV file and processes it, then display the result.
+ 	- sound.h: This is the header file for sound.c
+ 	- screen.c: This file contains code for displaying the result of the WAV file on the screen.
+ 	- screen.h: This is the header file for screen.c
+ 	- com.c: This file contains code for the communicatinng between Raspberry Pi with online-server.
+ 	- com.h: This is the header file for comm.c
+ 	- makefile: This file sets the complication rules
+ 	- sound.php: This file is stored in the online-server for processing the data received from the project and display it to the user	
 
-....
+5. Copyright and Lincese
+	- This project made by Thien Hoang with the assistance of Dr. Gao Chao
+	- Raspberry Pi is a trade mark of the Raspberry Pi Foundation.
+
 6. Contact information
 
 Thien Hoang
