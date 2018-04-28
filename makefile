@@ -1,0 +1,16 @@
+OBJ = main.o sound.o screen.o com.o
+APPNAME = sound.a
+
+#link rule
+$(APPNAME) : $(OBJ)
+	gcc -o $(APPNAME) $(OBJ) -lm -lcurl
+    
+#compiling rule
+%.o : %.c
+	gcc -c -o $@ $<
+
+clean:
+	rm $(OBJ) $(APPNAME)
+
+tar:
+	tar cf project.tar *
